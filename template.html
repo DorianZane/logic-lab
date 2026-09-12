@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#101925"><meta name="description" content="Thirty classic mathematical and logical puzzles. Play, ask for hints, and uncover the reasoning."><title>Logic Lab — 30 classic challenges</title><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head>
+<body>
+<header class="topbar"><a class="brand" href="./"><span class="brandmark" aria-hidden="true">∴</span> LOGIC LAB</a><span class="edition">30 CLASSIC CHALLENGES</span><span id="progressLabel" class="progress-label">0 / 30 solved</span></header>
+<div class="layout">
+<aside><div class="collection-head"><h1>The collection</h1><p>Small questions.<br>Surprising answers.</p></div><div class="progress-track" role="progressbar" aria-label="Puzzles solved" aria-valuemin="0" aria-valuemax="30" aria-valuenow="0"><span id="progressFill"></span></div><nav id="puzzleList" aria-label="Choose a puzzle"></nav><p class="legend">✓ Solved &nbsp; ◉ Solution viewed</p></aside>
+<main id="main"><div class="puzzle-top"><span id="category" class="eyebrow"></span><span id="difficulty" class="badge"></span></div><div class="title-row"><span id="number" aria-hidden="true"></span><h2 id="title" tabindex="-1"></h2></div><p id="prompt" class="prompt"></p>
+<form id="answerForm"><fieldset><legend>What do you think?</legend><div id="options"></div></fieldset><div class="actions"><button class="primary" id="check" type="submit">Check answer <span aria-hidden="true">↗</span></button><button id="hintButton" type="button" class="secondary">Give me a hint</button></div></form>
+<div id="feedback" role="status" aria-live="polite"></div><section id="hints" aria-label="Hints" aria-live="polite"></section>
+<div class="solution-bar"><button id="reveal" class="text-button" type="button" aria-expanded="false" aria-controls="solution">Reveal the reasoning</button><span>No timer. Take your time.</span></div><section id="solution" hidden aria-label="Solution"><h3>The reasoning</h3><p id="explanation"></p></section>
+<footer class="puzzle-footer"><button id="previous" class="secondary" type="button">← Previous</button><span id="position"></span><button id="next" class="secondary" type="button">Next puzzle →</button></footer><p id="completion" hidden class="completion">All 30 solved. Nicely reasoned.</p><p class="storage-note" id="storageNote">Progress stays in this browser. Revealed solutions are marked separately.</p></main></div>
+<script id="puzzleData" type="application/json">__PUZZLES__</script>
+</body></html>
